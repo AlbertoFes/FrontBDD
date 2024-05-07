@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Boliflix</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Películas</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Acción</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Terror</a></li>
+                        <li><a href="#">Suspenso</a></li>
+                        <li><a href="#">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Series</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Acción</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Terror</a></li>
+                        <li><a href="#">Suspenso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Clips</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Más Virales</a></li>
+                        <li><a href="#">Nuevo</a></li>
+                        <li><a href="#">Estrenos</a></li>
+                    </ul>
+                </li>
+    </header> 
+    
+    
+
+</main>
+    <div class="content">
+        <div class="sidebar">
+            <h2 class="filter-title">Filtrar búsqueda por:</h2>
+            <form action="search.php" method="post"></form>
+            <div class="filter-options">
+
+                <label for="author">Autor:</label>
+                <input type="text" id="author" name="author">
+
+                <label for="year">Año:</label>
+                <input type="text" id="year" name="year">
+
+                <label for="genre">Género:</label>
+                <input type="text" id="genre" name="genre">
+
+                <label for="duration">Duración:</label>
+                <input type="text" id="duration" name="duration">
+
+                <label for="rating">Calificación:</label>
+                <input type="text" id="rating" name="rating">
+            </div>
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div id="results"></div>
+        <script src="Busqueda.js"></script>
+
+
+        <section id="searchResults">
+            <h2 class="section-title">Tu película es: Nombre de la película</h2>
+            <div class="movie-details">
+                </div>
+                <div class="movie-info">
+                    <p><strong>Duración:</strong> 120 minutos</p>
+                    <p><strong>Género:</strong> Acción, Aventura</p>
+                    <p><strong>Sinopsis:</strong> Ejemplo</p>
+                    <p><strong>Puntuación:</strong> 4.5/5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</main>
+<section id="reviews">
+    <h2 class="section-title">Reseñas</h2>
+    <div id="reviewsList"></div>
+</section>
+</mani>
+
+
+
+    
+</main>
+<section id="reviews">
+    <h2 class="section-title">Deja tu reseña</h2>
+    <form id="reviewForm">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="review">Reseña:</label>
+        <textarea id="review" name="review" rows="4"></textarea><br><br>
+        <label for="rating">Puntuación:</label>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="Excelente">5 estrellas</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="Muy bueno">4 estrellas</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="Bueno">3 estrellas</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="Regular">2 estrellas</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="Malo">1 estrella</label>
+        </div><br><br>
+        <button type="button" onclick="enviarResena()">Enviar reseña</button>
+        <script src="enviarRese.js"></script>
+    </form>
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="search-bar">
+            <h2>Buscar por inicial de película</h2>
+            <div class="letters">
+                <span class="letter">A</span>
+                <span class="letter">B</span>
+                <span class="letter">C</span>
+                <span class="letter">D</span>
+                <span class="letter">E</span>
+                <span class="letter">F</span>
+                <span class="letter">G</span>
+                <span class="letter">H</span>
+                <span class="letter">I</span>
+                <span class="letter">J</span>
+                <span class="letter">K</span>
+                <span class="letter">L</span>
+                <span class="letter">M</span>
+                <span class="letter">N</span>
+                <span class="letter">O</span>
+                <span class="letter">P</span>
+                <span class="letter">Q</span>
+                <span class="letter">R</span>
+                <span class="letter">S</span>
+                <span class="letter">T</span>
+                <span class="letter">U</span>
+                <span class="letter">V</span>
+                <span class="letter">W</span>
+                <span class="letter">X</span>
+                <span class="letter">Y</span>
+                <span class="letter">Z</span>
+            </div>
+        </div>
+        <p>Derechos reservados para Boliflix Distribuidos S.A. de S.V.</p>
+    </footer>
+</body>
+</html>

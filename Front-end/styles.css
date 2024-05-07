@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Color de las letras Boliflixes */
+header {
+    background-color: #020202;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+/* subPeli */
+nav ul li a {
+    color: rgb(226, 225, 231);
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+ /*filto de busqueda*/
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #293468;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.filter-title {
+    color: #fff;
+}
+
+.filter-options {
+    margin-top: 10px;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.filter-options input[type=text] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#searchButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #ff0a16;
+}
+
+.movie-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+.movie-info {
+    flex: 2;
+}
+
+.section-title {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+}
+
+.letter {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rating {
+    color: orange;
+    display: inline-block;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: '★';
+    font-size: 24px;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+    content: '★';
+}
